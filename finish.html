@@ -4,27 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Start</title>
+    <title>Finish</title>
     <link rel="stylesheet" type="text/css" href="bootstrap.css">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-
-<div class="container-fluid">
+<div class="container-fluid" id="body">
     <div class="row">
         <div class="col-md-6 col-md-offset-3 col-xs-12 col-sm-12 col-lg-6 col-lg-offset-3">
             <div class="panel panel-default">
                 <div class="panel-body">
-                    <h3><font>Hi! We're glad to see you in our game</font></h3>
-                    <h4><font>You must find 6 identical logos of football clubs and name it!</font></h4>
-                    <h4><font>Would you like to start?</font></h4>
+                    <h3><font>Cool! You win!</font></h3>
+                    <h4><font>Would you like to start again?</font></h4>
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-md-2 col-md-offset-5 col-xs-2 col-xs-offset-4 col-lg-2 col-lg-offset-5 col-sm-2 col-sm-offset-5">
+                            <div class="col-md-1 col-md-offset-4 col-xs-1 col-xs-offset-2 col-lg-1 col-lg-offset-4 col-sm-1 col-sm-offset-4">
                                 <form action="index.html">
                                     <button class="btn btn-primary btn-lg" type="submit"><font>start</font></button>
                                 </form>
                             </div>
+                            <div class="col-md-1 col-md-offset-1 col-xs-1 col-xs-offset-3 col-lg-1 col-lg-offset-1 col-sm-1 col-sm-offset-1">
+                                <form action='javascript: forFinish()'>
+                                    <button class="btn btn-danger btn-lg" type="submit"><font>no</font></button>
+                                </form>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -33,5 +37,7 @@
     </div>
 </div>
 
+<script type="text/javascript" src="./jquery-2.2.2.js"></script>
+<script type="text/javascript" src="./index.js"></script>
 </body>
 </html>

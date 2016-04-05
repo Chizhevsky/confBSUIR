@@ -380,73 +380,10 @@ $(document).ready(function() {
 });
 
 function forEnd() {
-    return location.href = 'http://www.yandex.ru/';
+    return location.href = 'finish.html';
 }
 
-/*$(document).ready(function() {
-    var arsNumb = 0,
-        fulhNumb = 0,
-        clickNumb = 0,
-        previous = null;
-    $('#ArsFirst').on('click', function() {
-        $(this).replaceWith("<img src='./img/Арсенал.jpg' class='img-responsive' id='ArsFirst'>");
-        ++clickNumb;
-        if (clickNumb == 1 && arsNumb == 0) {
-            ++arsNumb;
-            previous = $('#ArsFirst');
-            return true;
-        } else if (window.clickNumb == 2 && window.arsNumb == 1) {
-            arsNumb = 0;
-            fulhNumb = 0;
-            clickNumb = 0;
-            $(this).removeAttr('id');
-            $('#ArsSec').removeAttr('id');
-            previous = null;
-            return true;
-        } else if (clickNumb = 2 && arsNumb == 0) {
-            arsNumb = 0;
-            fulhNumb = 0;
-            clickNumb = 0;
-            $('#ArsFirst').replaceWith("<img src='./img/АПЛ.jpg' class='img-responsive' id='ArsFirst'>");
-            setInterval(function(){
-                $(this).replaceWith("<img src='./img/АПЛ.jpg' class='img-responsive' id='ArsFirst'>");
-                var a = previous.attr('id');
-                previous.replaceWith("<img src='./img/АПЛ.jpg' class='img-responsive' id='a'>");
-                previous = null;
-            }, 2000);
-            return true;
-        }
-        return true;
-    });
-    $('#FulhFirst').on ('click', function() {
-        $(this).replaceWith("<img src='./img/Фулхэм.jpg' class='img-responsive' id='FulhFirst'>");
-        ++clickNumb;
-        if (clickNumb == 1 && fulhNumb == 0) {
-            ++fulhNumb;
-            previous = $('#FulhFirst');
-            return true;
-        } else if (clickNumb == 2 && fulhNumb == 1) {
-            fulhNumb = 0;
-            arsNumb = 0;
-            clickNumb = 0;
-            $(this).removeAttr('id');
-            $('#FulhSec').removeAttr('id');
-            previous = null;
-            return true;
-        } else if (clickNumb = 2 && fulhNumb == 0) {
-            arsNumb = 0;
-            fulhNumb = 0;
-            clickNumb = 0;
-            $(this).replaceWith("<img src='./img/АПЛ.jpg' class='img-responsive' id='FulhFirst'>");
-            //TUT
-            setInterval(function(){
-                $('#FulhFirst').replaceWith("<img src='./img/АПЛ.jpg' class='img-responsive' id='FulhFirst'>");
-                var f = previous.attr('id');
-                previous.replaceWith("<img src='./img/АПЛ.jpg' class='img-responsive' id='f'>");
-                previous = null;
-            }, 2000);
-            return true;
-        }
-        return true;
-    });
-});*/
+function forFinish() {
+    $('#body').replaceWith('<h1><font>Goodbay!</font></h1>');
+    $('body h1').addClass('end');
+}
