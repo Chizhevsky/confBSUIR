@@ -145,9 +145,9 @@ $(document).ready(function() {
         } else if (this[clickNumb] == 2 && this[MCNumb] == 1) {
             var clubName = prompt('How is it called?');
             if (clubName == 'Manchester City') {
-                alert('Right. Lets continue');
+                //alert('Right. Lets continue');
             } else {
-                alert('Lets start again');
+                //alert('Lets start again');
                 location.reload();
                 return 0;
             }
