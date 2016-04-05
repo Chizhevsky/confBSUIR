@@ -12,7 +12,8 @@ $(document).ready(function() {
         MCNumb: 0,
         EvNumb: 0,
         current: null,
-        previous: null
+        previous: null,
+        mainCounter: 0
     };
 
     $('#ArsFirst').on('click', function() {
@@ -79,7 +80,7 @@ $(document).ready(function() {
         $(this).attr('src','./img/Эвертон.jpg');
         ++glob.clickNumb;
         glob.current = $('#EvFirst');
-        forMC.call(glob, 'current', 'previous', 'clickNumb', 'EvNumb');
+        forEv.call(glob, 'current', 'previous', 'clickNumb', 'EvNumb');
     });
     $('#EvSec').on('click', function() {
         $(this).attr('src','./img/Эвертон.jpg');
@@ -113,6 +114,10 @@ $(document).ready(function() {
             this[previous].removeAttr('id');
             glob.previous = null;
             glob.current = null;
+            ++glob.mainCounter;
+            if (glob.mainCounter >= 6) {
+                forEnd();
+            }
             //return 0;
         } else if (this[clickNumb] == 2 && this[EvNumb] == 0) {
             glob.arsNumb = 0;
@@ -157,6 +162,10 @@ $(document).ready(function() {
             this[previous].removeAttr('id');
             glob.previous = null;
             glob.current = null;
+            ++glob.mainCounter;
+            if (glob.mainCounter >= 6) {
+                forEnd();
+            }
             //return 0;
         } else if (this[clickNumb] == 2 && this[MCNumb] == 0) {
             glob.arsNumb = 0;
@@ -201,6 +210,10 @@ $(document).ready(function() {
             this[previous].removeAttr('id');
             glob.previous = null;
             glob.current = null;
+            ++glob.mainCounter;
+            if (glob.mainCounter >= 6) {
+                forEnd();
+            }
             //return 0;
         } else if (this[clickNumb] == 2 && this[LivNumb] == 0) {
             glob.arsNumb = 0;
@@ -245,6 +258,10 @@ $(document).ready(function() {
             this[previous].removeAttr('id');
             glob.previous = null;
             glob.current = null;
+            ++glob.mainCounter;
+            if (glob.mainCounter >= 6) {
+                forEnd();
+            }
             //return 0;
         } else if (this[clickNumb] == 2 && this[AVNumb] == 0) {
             glob.arsNumb = 0;
@@ -289,6 +306,10 @@ $(document).ready(function() {
             this[previous].removeAttr('id');
             glob.previous = null;
             glob.current = null;
+            ++glob.mainCounter;
+            if (glob.mainCounter >= 6) {
+                forEnd();
+            }
             //return 0;
         } else if (this[clickNumb] == 2 && this[arsNumb] == 0) {
             glob.arsNumb = 0;
@@ -332,6 +353,11 @@ $(document).ready(function() {
             this[current].removeAttr('id');
             this[previous].removeAttr('id');
             glob.previous = null;
+            glob.current = null;
+            ++glob.mainCounter;
+            if (glob.mainCounter >= 6) {
+                forEnd();
+            }
             //return 0;
         } else if (this[clickNumb] == 2 && this[fulhNumb] == 0) {
             glob.arsNumb = 0;
@@ -352,6 +378,10 @@ $(document).ready(function() {
         return 0;
     }
 });
+
+function forEnd() {
+    return location.href = 'http://www.yandex.ru/';
+}
 
 /*$(document).ready(function() {
     var arsNumb = 0,
