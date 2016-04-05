@@ -97,9 +97,9 @@ $(document).ready(function() {
         } else if (this[clickNumb] == 2 && this[EvNumb] == 1) {
             var clubName = prompt('How is it called?');
             if (clubName == 'Everton') {
-                alert('Right. Lets continue');
+                //alert('Right. Lets continue');
             } else {
-                alert('Lets start again');
+                //alert('Lets start again');
                 location.reload();
                 return 0;
             }
@@ -193,9 +193,9 @@ $(document).ready(function() {
         } else if (this[clickNumb] == 2 && this[LivNumb] == 1) {
             var clubName = prompt('How is it called?');
             if (clubName == 'Liverpool') {
-                alert('Right. Lets continue');
+                //alert('Right. Lets continue');
             } else {
-                alert('Lets start again');
+                //alert('Lets start again');
                 location.reload();
                 return 0;
             }
@@ -241,9 +241,9 @@ $(document).ready(function() {
         } else if (this[clickNumb] == 2 && this[AVNumb] == 1) {
             var clubName = prompt('How is it called?');
             if (clubName == 'Aston Villa') {
-                alert('Right. Lets continue');
+                //alert('Right. Lets continue');
             } else {
-                alert('Lets start again');
+                //alert('Lets start again');
                 location.reload();
                 return 0;
             }
@@ -289,9 +289,9 @@ $(document).ready(function() {
         } else if (this[clickNumb] == 2 && this[arsNumb] == 1) {
             var clubName = prompt('How is it called?');
             if (clubName == 'Arsenal') {
-                alert('Right. Lets continue');
+                //alert('Right. Lets continue');
             } else {
-                alert('Lets start again');
+                //alert('Lets start again');
                 location.reload();
                 return 0;
             }
@@ -337,9 +337,9 @@ $(document).ready(function() {
         } else if (this[clickNumb] == 2 && this[fulhNumb] == 1) {
             var clubName = prompt('How is it called?');
             if (clubName == 'Fulham') {
-                alert('Right. Lets continue');
+                //alert('Right. Lets continue');
             } else {
-                alert('Lets start again');
+                //alert('Lets start again');
                 location.reload();
                 return 0;
             }
